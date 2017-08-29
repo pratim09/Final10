@@ -5,7 +5,7 @@
  <parameter name="browser" value="FF"/>
     <classes>
        <!-- <class name="com.ctli.it.testcases.NaukriTestCase1"/>  --> 
-      <class name="com.ctli.it.testcases.NaukriTestCase2"/>  
+      <class name="com.ctli.it.testcases.NaukiriTestCase2"/>  
     </classes>
   </test>  
   
