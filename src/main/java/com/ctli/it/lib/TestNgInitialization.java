@@ -126,7 +126,7 @@ public class TestNgInitialization implements AutomationConstants {
 	public void closeApp(Method method, XmlTest test, ITestResult result)
 	{
 		 String browser = test.getParameter("browser");
-		if(result.isSuccess()){
+	/*	if(result.isSuccess()){
 			System.out.println("pass");  
 		}else{
 			 if(browser.equalsIgnoreCase("ff")||browser.equalsIgnoreCase("gc")||browser.equalsIgnoreCase("ie")){
@@ -139,7 +139,7 @@ public class TestNgInitialization implements AutomationConstants {
 				 System.out.println("Successfully captured a screenshot");
 			 }
 			
-		}
+		} */
 		  if(browser.equalsIgnoreCase("ff")||browser.equalsIgnoreCase("gc")||browser.equalsIgnoreCase("ie")){
 			  driver.quit();
 		  }else if (browser.equalsIgnoreCase("appium")) {
