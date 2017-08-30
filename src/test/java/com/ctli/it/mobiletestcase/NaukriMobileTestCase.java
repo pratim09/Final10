@@ -14,10 +14,10 @@ public class NaukriMobileTestCase extends TestNgInitialization{
 	public void test() throws InterruptedException {
 		NaukriPage np = new NaukriPage(mobiledriver, testReport);
 		np.searchJobs();
-		NaukriHomePage nhp = new NaukriHomePage(mobiledriver, testReport);
+	/*	NaukriHomePage nhp = new NaukriHomePage(mobiledriver, testReport);
 		nhp.filter();
 		NaukriJobDescriptionPage ndesp = new NaukriJobDescriptionPage(mobiledriver, testReport);
-		ndesp.storeDataIntoExcel();
+		ndesp.storeDataIntoExcel();*/
 	} 
 
 }

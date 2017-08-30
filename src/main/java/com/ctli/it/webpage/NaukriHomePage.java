@@ -74,6 +74,8 @@ public class NaukriHomePage extends BaseClass{
 	
 	public void verifyHomePage(){
 		boolean naukriImgVisible = isVisible(img_Naukri);
+		
+		System.out.println("Test Case with Thread Id:- " + Thread.currentThread().getId());
 		Assert.assertTrue(naukriImgVisible);
 	}
 	

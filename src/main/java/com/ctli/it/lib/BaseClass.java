@@ -200,7 +200,6 @@ public class BaseClass {
 			WebDriverWait dWait = new WebDriverWait(driver, TIME_OUT);
 			elm = dWait.until(ExpectedConditions.elementToBeClickable(elm));
 			elm.click();
-			System.out.println("clicked Done");
 			testReport.log(LogStatus.INFO,"successfully clicked on element");
 		} catch (Exception e) {
 			fail("Failed click " + elm.getTagName() + " with Exception: " + e.getMessage());

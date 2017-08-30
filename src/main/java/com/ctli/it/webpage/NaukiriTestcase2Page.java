@@ -35,6 +35,7 @@ public class NaukiriTestcase2Page extends BaseClass{
 		click(lbl_upload);
 		System.out.println(System.getProperty("user.dir")+"\\Resources\\DummyCV.docx");
 		rm.Uploadfile("File Upload", "Edit1", "DummyCV.docx", "Button1");
+		System.out.println("Test Case1 with Thread Id:- " + Thread.currentThread().getId());
 		//rm.Uploadfile("Choose File to Upload", "Edit1", "DummyCV.docx", "Button1");
 		//rm.Uploadfile2("Choose File to Upload", "ToolbarWindow32","Edit1", "DummyCV.docx", "Button1");
 		try {

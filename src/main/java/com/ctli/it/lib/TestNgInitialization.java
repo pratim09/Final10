@@ -21,6 +21,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.xml.XmlTest;
 
+import com.ctli.it.restassured.RestMethods;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -40,6 +41,8 @@ public class TestNgInitialization implements AutomationConstants {
 		 String extentConfigFile=System.getProperty("user.dir")+"\\Resources\\Config.xml";
 		  extent=new ExtentReports(reportFilePath, true);
 		  extent.loadConfig(new File(extentConfigFile));  
+		  RestMethods r = new RestMethods();
+		  r.getResponse();
 	}
 
 	@BeforeMethod
@@ -128,8 +131,7 @@ public class TestNgInitialization implements AutomationConstants {
 		 String browser = test.getParameter("browser");
 
 
-	/*	if(result.isSuccess()){
->>>>>>> branch 'master' of https://github.com/pratim09/CTLI_HAMPS.git
+/*	if(result.isSuccess()){
 			System.out.println("pass");  
 		}else{
 			 if(browser.equalsIgnoreCase("ff")||browser.equalsIgnoreCase("gc")||browser.equalsIgnoreCase("ie")){
@@ -141,17 +143,17 @@ public class TestNgInitialization implements AutomationConstants {
 				 mbClass.getPageScreenShot();
 				 System.out.println("Successfully captured a screenshot");
 			 }
-			
-*/
+		}*/
 		  if(browser.equalsIgnoreCase("ff")||browser.equalsIgnoreCase("gc")||browser.equalsIgnoreCase("ie")){
 			  driver.quit();
 		  }else if (browser.equalsIgnoreCase("appium")) {
 			mobiledriver.close();
-		}
+		
 		
 	}
 	
-	
+		
+	}
 	  @AfterSuite
 	  public void afterSuite( XmlTest test){
 		

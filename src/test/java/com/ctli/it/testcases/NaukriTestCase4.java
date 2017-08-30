@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.ctli.it.lib.TestNgInitialization;
 import com.ctli.it.webpage.NaukriHomePage;
 
-public class NaukriTestCase1 extends TestNgInitialization{
+public class NaukriTestCase4 extends TestNgInitialization{
 	
 	@Test
 	public void test() throws InterruptedException{
