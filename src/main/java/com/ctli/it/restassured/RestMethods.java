@@ -12,7 +12,6 @@ import java.util.Random;
 import org.testng.Assert;
 
 import com.ctli.it.lib.DataTable;
-import com.ctli.it.testcases.RestService;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.path.json.JsonPath;
