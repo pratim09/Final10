@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="classes" thread-count="5">
-	<!-- 	<test name="FF Test">
+	 <test name="FF Test">
 		<parameter name="browser" value="FF" />
 		<classes>
 			<class name="com.ctli.it.testcases.Ghost_WebScenario1" />
 			<class name="com.ctli.it.testcases.Ghost_WebScenario2" />
 			<class name="com.ctli.it.testcases.Ghost_WebScenario3" />
 			<class name="com.ctli.it.testcases.Ghost_WebScenario4" />
-
 		</classes> 
-	</test>  	-->
+	</test>  	
 	<test name="Mobile Test">
 		<parameter name="browser" value="appium" />
 		<classes>
 			<class name="com.ctli.it.mobiletestcase.Ghost_MobileScenario" />
 		</classes>
 	</test>
-
-
-	<!-- <test name="Rest Test"> <parameter name="browser" value="Rest"/> <classes> 
-		<class name="com.ctli.it.testcases.RestService"/> </classes> </test> <test 
-		name="soap Test"> <parameter name="browser" value="soap"/> <classes> <class 
-		name="com.ctli.it.soap.CelsiusToFahrenheit"/> </classes> </test> -->
 </suite> <!-- Suite -->
